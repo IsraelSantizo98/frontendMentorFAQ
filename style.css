@@ -1,0 +1,66 @@
+:root{
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+}
+html {
+    /* Reset para rems 62.5% = 10px */
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.5rem;
+    background: linear-gradient(var(--softViolet), var(--softBlue)); 
+}
+h1{
+    text-transform: uppercase;
+}
+img{
+    width: 100%;
+    max-width: 800px;
+}
+.wrapper{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    float: none;
+}
+.container{
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    /*Indica cual sera el main y cross axis*/
+    flex-flow: row wrap;
+    /*alinea contra el cross axis*/
+    align-items: stretch;
+    /*alinea contra el main axis*/
+    justify-content: center;
+    flex: 0 1 auto;
+    /* border: 5px solid red; */
+}
+.item{
+    border: 1px solid black;
+    /* height: 100px; */
+    padding: 3rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+.item:nth-child(1){
+    /* background-color: lightcoral; */
+    /* flex: 0 0 40%; */
+}
+.item:nth-child(2){
+    /* background-color: lightcyan; */
+    /* flex: 0 0 40%;
+    flex-flow: column nowrap; */
+}
