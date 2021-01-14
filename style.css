@@ -96,3 +96,49 @@ summary:nth-child(1){
 details:focus{
     outline: none;
 }
+@media screen and (max-width: 375px){
+    body{
+        font-size: 1.2rem;
+    }
+    ul{
+        padding: 0;
+    }
+    ul li{
+        list-style: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 80%;
+        height: 80%;
+        background-image: none;
+    }
+    .item{
+        flex: 0 0 50%;
+        position: relative;
+        /* border: 1px solid black; */
+    }
+    .item:nth-child(1){
+        background-image: url(images/illustration-woman-online-mobile.svg);
+        background-repeat: no-repeat;
+        /* background-position: cover; */
+        background-position-x: -65px;
+        background-position-y: 50% ;
+        height: 80%;
+        position: relative;
+        background-color: red;
+    }
+    .image2{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 10%;
+        left: -25%;
+    }
+    .item:nth-child(2){
+        /* background-color: red; */
+        padding: 0.8rem;
+    }
+}
