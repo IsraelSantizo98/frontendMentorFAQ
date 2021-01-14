@@ -1,6 +1,7 @@
 :root{
     --softViolet: hsl(273, 75%, 66%);
     --softBlue: hsl(240, 73%, 65%);
+    --colorBorder: #C4C4C4;
 }
 html {
     /* Reset para rems 62.5% = 10px */
@@ -70,10 +71,28 @@ img{
     height: 80%;
     position: relative;
 }
+.item:nth-child(2){
+    flex: 0 0 40%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
 .image2{
     height: 200px;
     width: 200px;
     position: absolute;
     top: 40%;
     left: -25%;
+}
+summary{
+    border-bottom: 1px solid var(--colorBorder);
+    border-top: 1px solid var(--colorBorder);
+    padding-bottom: 1rem;
+}
+summary:nth-child(1){
+    border-top: none;
+}
+details:focus{
+    outline: none;
 }
